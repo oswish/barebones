@@ -12,6 +12,10 @@ npm run build:nvmrc; nvm install; npm run refresh; npm start;
 
 ![hmr](doc/hmr.gif)
 
+## Tests (cypress)
+
+![cypress](doc/cypress.gif)
+
 ## Build
 
 ```sh
