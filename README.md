@@ -8,6 +8,10 @@ npm run build:nvmrc; nvm install; npm run refresh; npm start;
 
 ![quick-start](doc/quick-start.gif)
 
+## Hot Module Reload (HMR)
+
+![hmr](doc/hmr.gif)
+
 ## Build
 
 ```sh
