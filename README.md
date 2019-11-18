@@ -7,3 +7,11 @@ npm run build:nvmrc; nvm install; npm run refresh; npm start;
 ```
 
 ![quick-start](doc/quick-start.gif)
+
+## Build
+
+```sh
+npm run build
+```
+
+![build](doc/build.gif)
