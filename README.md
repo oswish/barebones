@@ -16,6 +16,10 @@ npm run build:nvmrc; nvm install; npm run refresh; npm start;
 
 ![cypress](doc/cypress.gif)
 
+## Lint
+
+![lint](doc/lint.gif)
+
 ## Build
 
 ```sh
