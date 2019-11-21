@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [{ "src": "bff.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/bff.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api",
+      "dest": "/bff.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/pm",
+      "dest": "/bff.js",
+      "methods": ["GET"]
+    }
+  ]
+}
