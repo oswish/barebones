@@ -8,7 +8,7 @@
     "node": "10.15.3"
   },
   "scripts": {
-    "build": "rm -rf dist && parcel build src/index.html",
+    "build": "rm -rf dist && parcel build src/index.html & rm -rf public && cp -rf dist public",
     "build:nvmrc": "echo $(node -p -e 'require(\"./package\").engines.node.split(\">=\").join(\"\")') > .nvmrc",
     "cypress:run": "./node_modules/.bin/cypress run",
     "cypress:open": "./node_modules/.bin/cypress open",

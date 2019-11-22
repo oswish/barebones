@@ -11,19 +11,7 @@ app.set('json spaces', 2);
 
 app.use('/', express.static(path.join(__dirname, '..', 'dist')));
 
-app.get('/api', (req, res) => {
-  // raw
-  const payload = ['back', 'end', 'for', 'front', 'end'];
-
-  // prep
-  const message = payload
-    .map(word => word.charAt(0).toUpperCase() + word.substr(1))
-    .join('');
-
-  res.json({ message });
-});
-
-app.get('/api/pm', (req, res) => {
+app.get('/pm', (req, res) => {
   fetch('https://www.getpostman.com/')
     .then(
       (r) => {

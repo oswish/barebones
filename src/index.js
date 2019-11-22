@@ -3,12 +3,13 @@ const ReactDOM = require('react-dom');
 
 const { useState } = React;
 const HOST = 'https://getpostman.com';
+const API_HOST = process.env.API_HOST || '';
 
 const PM = () => {
   const [payload, setPayload] = useState();
 
   if (!payload) {
-    fetch('/api/pm')
+    fetch(`${API_HOST}/pm`)
       .then(response => response.json())
       .then(data => {
         setPayload(data);
