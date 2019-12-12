@@ -16,7 +16,7 @@
     "nuke": "rm -rf node_modules",
     "pretty": "prettier --write '{src,cypress/integration/test}/**/*.js'",
     "refresh": "npm run nuke; npm install",
-    "start": "node ./bff"
+    "start": "node ./"
   },
   "author": "Brian Swisher",
   "license": "ISC",

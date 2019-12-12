@@ -1,6 +1,7 @@
 .DS_Store
 .env.local
 dist/*
+public/*
 node_modules/*
 cypress/integration/examples
 cypress/screenshots

@@ -7,6 +7,11 @@ const app = express();
 const bundler = new Bundler('src/index.html', {});
 const port = 3000;
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 app.set('json spaces', 2);
 
 app.use('/', express.static(path.join(__dirname, '..', 'dist')));
