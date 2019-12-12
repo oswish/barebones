@@ -1,5 +1,5 @@
 {
   "env": {
-    "API_HOST": "@api-host"
+    "API_HOST": "@environment-api-host"
   }
 }
